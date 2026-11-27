@@ -165,6 +165,7 @@ const SidebarLayout: React.FC<OwnProps> = ({
   Brand,
   Logo = DenimLogo,
   themes,
+  favicon,
   SidebarFooter,
   Controls,
   breakpoints = DEFAULT_BREAKPOINTS,
@@ -172,7 +173,7 @@ const SidebarLayout: React.FC<OwnProps> = ({
 }) => {
   const { status, RootComponent } = useDenim();
   const nav = useNav();
-  const themeKey = useFluentTheme(themes);
+  const themeKey = useFluentTheme(themes, favicon);
   const layout = useBreakpoint(breakpoints);
   const goUp = useGoUp();
   const [collapsed, setCollapsed] = React.useState(readCollapsed);

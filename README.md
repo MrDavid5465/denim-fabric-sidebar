@@ -234,6 +234,7 @@ plus:
 | `Brand` | your icon; receives the title as `children` (and `logoClassName` for the icon), so render both inside your link: logo and title become one tap target |
 | `Logo` | splash-screen logo |
 | `themes` | theme builders; default `THEMES` |
+| `favicon` | `(color) => svg` for the tab icon in the theme colour, for apps with their own icon; default the Denim mark |
 | `SidebarFooter` | extra content in the sidebar footer, above Settings (full sidebar and phone menu) |
 | `Controls` | always-visible controls: a row at the top of the sidebar footer (full sidebar, icon rail, phone menu) and the right end of the phone's top bar. The bar may mount it twice at once, so keep it presentational |
 | `breakpoints` | `{ medium, wide }` in px; default `{ medium: 700, wide: 1200 }` |
